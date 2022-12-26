@@ -1,7 +1,12 @@
 import "./PostSide.css";
+import PostShare from "../PostShare/PostShare";
 
 const PostSide = () => {
-  return <div>PostSide</div>;
+  return (
+    <div className="PostSide">
+      <PostShare></PostShare>
+    </div>
+  );
 };
 
 export default PostSide;
