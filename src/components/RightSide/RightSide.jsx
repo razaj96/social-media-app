@@ -3,6 +3,7 @@ import Home from "../../img/home.png";
 import Noti from "../../img/noti.png";
 import Comment from "../../img/comment.png";
 import { UilSetting } from "@iconscout/react-unicons";
+import TrendCard from "../TrendCard/TrendCard";
 
 const RightSide = () => {
   return (
@@ -14,6 +15,7 @@ const RightSide = () => {
         <img src={Comment} alt="" />
       </div>
       <TrendCard></TrendCard>
+      <button className="button r-button">Share</button>
     </div>
   );
 };
