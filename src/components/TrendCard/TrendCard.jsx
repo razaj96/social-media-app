@@ -1,9 +1,18 @@
 import "./TrendCard.css";
+import { TrendData } from "../../Data/TrendData.js";
 
 const TrendCard = () => {
   return (
     <div className="TrendCard">
-      <div className="card"></div>
+      <h3>Trends For You</h3>
+      {TrendData.map((trend) => {
+        return (
+          <div className="trend">
+            <span>#{trend.name}</span>
+            <span>{trend.shares}k Share</span>
+          </div>
+        );
+      })}
     </div>
   );
 };
