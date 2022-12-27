@@ -1,7 +1,15 @@
 import "./Posts.css";
+import { PostsData } from "../../Data/PostsData";
+import Post from "../Post/Post";
 
 const Posts = () => {
-  return <div>Posts</div>;
+  return (
+    <div className="Posts">
+      {PostsData.map((post, id) => {
+        return <Post></Post>;
+      })}
+    </div>
+  );
 };
 
 export default Posts;
